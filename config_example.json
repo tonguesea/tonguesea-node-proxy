@@ -1,26 +1,13 @@
 {
   "pools": [
     {
-      "hostname": "gulf.moneroocean.stream",
-      "port": 10032,
-      "ssl": false,
-      "allowSelfSignedSSL": false,
-      "share": 100,
-      "username": "44qJYxdbuqSKarYnDSXB6KLbsH4yR65vpJe3ELLDii9i4ZgKpgQXZYR4AMJxBJbfbKZGWUxZU42QyZSsP4AyZZMbJBCrWr1",
-      "password": "proxy",
-      "keepAlive": true,
-      "algo": "cryptonight/1",
-      "blob_type": "cryptonote",
-      "default": true
-    },
-    {
       "hostname": "pool.supportxmr.com",
       "port": 7777,
       "ssl": false,
       "allowSelfSignedSSL": false,
       "share": 0,
-      "username": "44qJYxdbuqSKarYnDSXB6KLbsH4yR65vpJe3ELLDii9i4ZgKpgQXZYR4AMJxBJbfbKZGWUxZU42QyZSsP4AyZZMbJBCrWr1",
-      "password": "proxy",
+      "username": "44DmdJXTKaJbKBVH9mjdtpXwAa62uGbLB49JT5PrDhyGAvgHCnME4HDiqi42waPXAaPHXsgbV3aQ133BkKW9qopXS9nDXJp",
+      "password": "Proxy:tonguesea@126.com",
       "keepAlive": true,
       "algo": "cryptonight/1",
       "blob_type": "cryptonote",
@@ -29,23 +16,20 @@
   ],
   "listeningPorts": [
     {
-      "port": 8080,
+      "port": 5555,
       "ssl": false,
-      "diff": 5000
+      "diff": 5000,
+      "coin": "xmr"
     },
     {
-      "port": 8443,
-      "ssl": true,
-      "diff": 5000
-    },
-    {
-      "port": 3333,
+      "port": 7777,
       "ssl": false,
-      "diff": 10000
+      "diff": 10000,
+      "coin": "xmr"
     }
   ],
   "bindAddress": "0.0.0.0",
-  "developerShare": 1,
+  "developerShare": 0,
   "daemonAddress": "127.0.0.1:18081",
   "accessControl": {
     "enabled": false,
@@ -57,8 +41,8 @@
   "minerInactivityTime": "120",
   "coinSettings": {
     "xmr":{
-      "minDiff": 100,
-      "maxDiff": 300000,
+      "minDiff": 2000,
+      "maxDiff": 100000,
       "shareTargetTime": 15
     }
   }
